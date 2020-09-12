@@ -1,0 +1,140 @@
+ex1
+
+		  inteiro baseret, alturaret, arearet
+            escreva ("Digite a base do retangulo: ")
+            leia (baseret)
+            escreva("Digite a altura do retangulo: ")
+            leia (alturaret) 
+            arearet = baseret * alturaret
+            escreva ("A area do retangulo é ", arearet)
+
+ex2
+
+		inteiro lado, area
+            escreva("Digite o tamanho do quadrado: ")
+            leia (lado)
+            area = lado * 2
+            escreva ("A area do quadrado é " , area)
+
+ex3
+
+		  inteiro diagonal, area, aresta
+            escreva ("Digite o valor da diagonal do quadrado: ")
+            leia (diagonal)
+            area = ((diagonal * diagonal) / 2)            
+            escreva ("A area do quadrado é " + area)
+ex4
+ 
+		inteiro bases, altura, area 
+            escreva ("Digite o valor da base: ")
+            leia (bases)
+            escreva ("Digite o valor da altura: ")
+            leia (altura)
+            area = (bases * altura) / 2 
+            escreva ("O valor da area do triangulo é " + area)     
+
+ex5
+
+		inteiro diametro, raio, area
+          escreva("Digite o tamanho do diametro da esfera: ")
+          leia (diametro)
+          raio = diametro / 2
+          area = (4 * 3.14 * (raio * raio * raio)) / 3
+          escreva ("O volume é da esfera é " + area)    
+ex6
+
+		 real n1, n2, n3, n4, media
+           escreva("Digie um numero: ")
+           leia (n1) 
+           escreva ("Digie um numero: ")
+           leia (n2)
+           escreva ("Digie um numero: ")
+           leia (n3)
+           escreva ("Digie um numero: ")
+           leia (n4)
+           media = (n1 + n2 + n3 + n4) / 4
+           escreva ("A media entre os numeros é " + media)
+ex7
+		
+            real n1, n2, media, radicando
+            radicando = 2
+            escreva("Digite um numero: ")
+            leia (n1)
+            escreva("Digite um numero: ")
+            leia (n2)
+            media = (raizQ ((n1 * n2), radicando ))
+            escreva ("A media geometrica é " + media)
+ex8
+
+		  real milhamar, km, metros
+            escreva ("Digite a quantidade milha maritima: ")
+            leia (milhamar)
+            metros = milhamar * 1852
+            km = metros / 1000
+            escreva("A quantidade em quilometros é " + km)
+ex9
+
+		  real tensao, corrente, resistencia
+            escreva ("Digite o valor da resistencia do circuito: ")
+            leia (resistencia)
+            escreva ("Digite o valor da corrente do circuito: ")
+            leia (corrente)
+            tensao = corrente * resistencia
+            escreva ("O valor da tensao no circuito é " + tensao)
+ex10
+
+		  real tc, tf
+            escreva ("Digite a temperatura em Fahrenheit: ")
+            leia (tf)
+            tc = ((tf - 32) / 9) * 5
+            escreva("A temperatura é " + tc + " em Celsius")
+ex11
+
+		real area, diametro, raio
+            escreva ("Digite o tamanho do diametro do circulo: ")
+            leia (diametro)
+            raio = diametro / 2
+            area = 3.141592653589793 *(raio * raio)
+            escreva ("A area do ciruclo é " + area)
+ex12
+
+		  real altura, volume, raiobase
+            escreva ("Digite o valor da altura do cone: ")
+            leia (altura) 
+            escreva ("Digite o valor da raio da base do cone: ")
+            leia (raiobase)
+            volume = ( 3.141592653589793 * raiobase * raiobase * altura) / 3
+            escreva ("O volume do cone é " + volume)
+ex13
+
+		  real vf, vi, aceleracao, tempo, ms
+            escreva ("Digite a velocidade incial (em m/s): ")
+            leia (vi)
+            escreva ("Digite o valor da aceleracao: ")
+            leia (aceleracao)
+            escreva ("Digite o tempo (em segundos): ")
+            leia (tempo)
+            ms = (tempo * aceleracao) + tempo 
+            vf = ms * 3.6
+            escreva ("A velociade final é " + vf +  " (em km/h)")
+ex14
+
+		  real vl, ve, vc, raio, aresta
+            escreva ("Digite o valor do raio da esfera: ")
+            leia (raio)
+            escreva ("Digite o valor da aresta do cubo: ")
+            leia (aresta)
+            vc = aresta * aresta * aresta
+            ve = (4 / 3) * 3.141592653589793 * raio
+            vl = vc - ve
+            escreva ("O valor livre entre o cubo e a aresta é " + vl)
+ex15
+
+		  real reais, cotacao, dolar
+            escreva ("Digite o valor da cotacão do dolar: ")
+            leia (cotacao)
+            escreva ("Digite o valor do dolar: ")
+            leia (dolar)
+            reais = dolar * cotacao
+            escreva ("O valor em reais é " + reais)
+ex16

@@ -1,0 +1,57 @@
+ex19
+		real n1, n2
+            escreva ("Digite um numero: ")
+            leia (n1)
+            escreva ("Digite um numero: ")
+            leia (n2)
+            se (n1 > n2)
+            {
+                escreva ("O numero " + n1 + " é maior que " + n2)
+            }
+            senao
+            {
+                escreva ("O numero " + n2 +" é maior que " + n1)
+            }
+ex20
+
+		  real n1, n2;
+            escreva ("Digite um numero: ")
+            leia (n1)
+            escreva ("Digite um numero: ")
+            leia (n2)
+            se (n1 < n2)
+            {
+                escreva ("O numero " + n1 + " é menor")
+            }
+            senao
+            {
+                escreva ("O numero  " + n2 + " é menor")
+            }
+ex22
+
+		  real arearet, baseret, alturaret
+            escreva ("Digite o valor da altura do retangulo: ")
+            leia (alturaret)
+            escreva ("Digite o valor da base do retangulo: ")
+            leia (baseret)
+            arearet = baseret * alturaret
+            se (arearet > 100)
+            {
+            escreva ("Terreno grande")
+            }
+ex23
+
+		  real arearet, baseret, alturaret
+            escreva("Digite o valor da altura do retangulo: ")
+            leia (alturaret)
+            escreva ("Digite o valor da base do retangulo: ")
+            leia (baseret)
+            arearet = baseret * alturaret
+            se (arearet > 100)
+                {
+                escreva ("Terreno grande")
+                }
+            senao
+                {
+                 escreva("Terreno pequeno")
+                }
