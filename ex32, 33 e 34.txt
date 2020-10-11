@@ -1,0 +1,49 @@
+ex32
+            real contadorfinal,contador
+            real c = 0 
+            escreva("Digite o valor do seu contador: ")
+            leia (contador)
+            
+            se (contador <= 0) 
+            {
+                escreva("Numero invalido!")
+                escreva("Digite o valor do seu contador: ")
+                leia (contador)
+            }            
+            escreva("Até quanto irá o contador: ")
+            leia (contadorfinal)
+            se (contadorfinal <= contador)
+            {
+                escreva("Numero invalido!")
+                escreva("Até quanto irá o contador: ")
+                leia (contadorfinal)
+            }
+            para (c = contador; contador <= contadorfinal ; contador = contador + 1)
+            {
+                escreva(contador)
+            }  
+ex33
+	    real n1,n2;   
+	    escreva("Digite um numero: ");
+            leia (n1)
+            escreva("Digite outro numero: ");
+            leia (n2)
+            enquanto (n2 < n1)
+            {     
+                escreva("Este numero tem que ser maior que o outro!\n");
+                escreva("Digite outro numero: ");
+                leia (n2)
+            }
+            escreva ("Numero aceito.")
+ex34
+	
+            caracter sexo
+            escreva("Digite o sexo: ")
+            leia (sexo)  
+            enquanto ((sexo != 'm') e (sexo != 'f'))
+            {
+                escreva("Sexo invalido!\n")
+                escreva("Digite o sexo: ")
+                leia (sexo)
+            }
+            escreva ("Sexo valido.")   

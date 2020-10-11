@@ -1,0 +1,232 @@
+ex21
+
+		  real n1, n2
+            escreva ("Digite um numero: ")
+            leia (n1)
+            escreva ("Digite um numero: ")
+            leia (n2)
+            se (n1 > n2)
+                escreva ("O numero " + n1 + " é maior")
+            senao
+                se (n2 > n1)
+                escreva ("O numero " + n2 + " é maior")
+            senao
+                 se (n1 == n2)
+                escreva ("Os dois numeros são identicos")
+ex24
+
+		  inteiro n1, n2, n3
+            escreva ("Digite um numero: ")
+            leia (n1)
+            escreva ("Digite um numero: ")
+            leia (n2)
+            escreva ("Digite um numero: ")
+            leia (n3)
+            se (n1 > n2 e n1 > n3)
+            {
+                escreva("O numero maior é " + n2)
+            }
+            senao
+            {
+                se (n2 > n1 e n2 > n3)
+                {
+                    escreva("O numero maior é " + n2)
+                }
+                senao
+                {
+                    escreva ("O numero maior é " + n3)
+
+                }
+            }
+ex25
+
+            real peso, altura, relacao
+            escreva ("Digite o peso: ")
+            leia (peso)
+            escreva ("Digite o altura: ")
+            leia (altura)
+            relacao = peso / (altura * altura)
+            se (relacao < 20)
+            {
+                escreva ("Abaixo do peso")
+            }
+            senao
+            {
+                se (20 <= relacao e relacao < 25)
+                 	escreva ("Seu peso é ideal")
+                
+                senao
+                {
+                    se (25 <= relacao)
+                    {
+                        escreva ("Acima do peso")
+                    }
+                }
+            }
+ex26
+
+		  real catetoadjascente, catetooposto, hipotenusa, soma
+            escreva("Digite o valor de cateto oposto: ")
+            leia (catetooposto)
+            escreva ("Digite o valor de cateto adjascente: ")
+            leia (catetoadjascente)
+            escreva("Digite o valor de hipotenusa: ")
+            leia (hipotenusa)
+            soma = catetoadjascente + catetooposto
+            se ((catetoadjascente == catetooposto) e (hipotenusa == catetoadjascente) e (soma > hipotenusa)) 
+            escreva("É um triangulo equliatero")            
+            senao
+            {
+                se (catetooposto == catetoadjascente e catetoadjascente == hipotenusa e hipotenusa == catetooposto e soma > hipotenusa)
+                {
+                    escreva("O triangulo é escaleno")
+                }
+                senao
+                {
+                    se (catetooposto == hipotenusa ou catetoadjascente == hipotenusa ou catetoadjascente == catetooposto e soma > hipotenusa)
+                    {
+                        escreva("O triangulo é isoceles")
+                    }
+                    senao
+                    {
+                        escreva("Não é um triangulo")
+                    }
+                }
+            }
+ex27
+
+            real catetooposto, catetoadj, hipo, somacat, quadhip
+            escreva("Digite o valor de A: ")
+            leia (catetoadj)
+            escreva("Digite o valor de B: ")
+            leia (catetooposto)
+            escreva("Digite o valor de C: ")
+            leia (hipo)
+            quadhip = hipo * hipo
+            somacat = (catetooposto * catetooposto) + (catetoadj * catetoadj)
+            se (somacat == quadhip)
+            {
+                escreva ("É um triangulo retangulo")
+            }
+            senao
+            {
+                escreva ("Não é um triangulo retangulo")
+            }
+ex28
+
+            real peso, altura, relacao;
+            cadeia sexo;
+            escreva("Digite o seu sexo F / M: ")
+            leia (sexo)
+            escreva("Digite a sua altura: ")
+            leia (altura)
+            escreva ("Digite o seu peso: ")
+            leia (peso)
+            relacao = peso / (altura * altura)
+            se (sexo == "f" e relacao < 19 )
+            {
+                escreva("Abaixo do peso")
+            }
+            senao
+            {
+                se (sexo == "f" e 19 <= relacao e relacao < 24)
+                {
+                    escreva("Peso Ideal")
+                }
+                senao
+                {
+                    se (sexo == "f" e relacao >= 24)
+                    {
+                        escreva("Acima do peso")
+                    }
+                    senao
+                    {
+                        se (sexo == "m" e relacao < 20)
+                        {
+                            escreva("Abaixo do peso")
+                        }
+                        senao
+                        {
+                            se (sexo == "m" e 20 <= relacao e relacao < 25)
+                            {
+                                escreva("Peso ideal")
+                            }
+                            senao
+                            {
+                                se (sexo =="m" e relacao >= 25)
+                                {
+                                    escreva("Acima do peso")
+                                }
+                                senao
+                                {
+                                    escreva("Sexo nao encotrado")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+ex29
+
+            real aceleracao, tempo, vinicial, vms, vkmh
+            escreva("Digite o valora da aceleracao: ");
+            leia (aceleracao)
+            escreva("Digite o valora do tempo do percurso: ");
+            leia (tempo)
+            escreva ("Digite o valora da velocidade inicial: ");
+            leia (vinicial)
+            vms = vinicial + aceleracao * tempo;
+            vkmh = vms * 3.6;
+            se (vkmh <= 40)
+            {
+                escreva("Veículo muito lento");
+            }
+            senao
+            {
+                se (40 < vkmh e vkmh <= 60)
+                {
+                    escreva("Velociade permitida");
+                }
+                senao
+                {
+                    se (60 < vkmh e vkmh <= 80)
+                    {
+                        escreva("Velocidade de cruzeiro");
+                    }
+                    senao
+                    {
+                        se (80 < vkmh e vkmh <= 120)
+                        {
+                            escreva ("Veículo rápido");
+                        }
+                        senao
+                        {
+                            escreva ("Veículo muito rápido");
+                        }
+                    }
+                }
+            }
+ex30
+
+		real p1, p2, media
+            escreva ("Digite o valor de P1: ")
+            leia (p1)
+            escreva ("Digite o valor de P1: ")
+            leia (p2)
+            media = (p1 + (2*p2))
+            se (media >= 5)
+            {
+                escreva("Aprovado")
+            }
+            senao
+            {
+                escreva("Reprovado")
+            }
+ex31
+
+            real p1, p2, sobra
+            escreva ("Digite o valor de P1: ")
+            leia (p1)
+            sobra = 15 - p1 
+            p2 = sobra / 2
+            escreva ("A nota de P2 precisa ser " + p2)   

@@ -1,0 +1,77 @@
+ex1
+		real n1,n2,n3,media
+		escreva ("Digite a primeira nota: ")
+		leia (n1)
+		escreva ("Digite a segunda nota: ")
+		leia (n2)
+		escreva ("Digite a terceira nota: ")
+		leia (n3)
+		media = (n1+n2+n3)/3
+		se (media < 6)
+		{
+			se (n1<n2 e n1<n3)
+			{
+				escreva("A menor nota é ",n1)
+			}
+			senao
+			{
+				se (n2<n3 e n2<n1)
+				{
+					escreva("A menor nota é ",n2)
+				}
+				senao
+				{
+					escreva("A menor nota é ",n3)		
+				}
+			}		
+		}
+		senao
+		{
+			escreva("A media é superior a 6")	
+		}
+ex2
+		real idade
+		escreva ("Digite a sua idade: ")
+		leia (idade)
+		enquanto (idade<=0)
+		{
+			escreva("Numero inválido!\n");
+               escreva("Digite novamente a sua idade: ");
+               leia (idade)
+		}
+		se(idade >=5 e idade <= 7)
+		{
+			escreva("Categoria Infantil A")
+		}
+		senao
+		{
+			se (idade >=8 e idade <= 11)
+			{
+				escreva("Categoria Infantil B")	
+			}
+			senao
+			{
+				se (idade >=12 e idade <= 13)
+				{
+					escreva ("Categoria Juvenil A")
+				}
+				senao
+				{
+					se (idade >=14 e idade <= 17)
+					{
+						escreva("Categoria Juvenil B")
+					}
+					senao
+					{
+						se (idade >= 18)
+						{
+							escreva("Categoria Adultos")
+						}
+						senao
+						{
+							escreva("Sem categoria")
+						}
+					}
+				}
+			}
+		}

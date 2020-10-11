@@ -1,0 +1,257 @@
+ex35
+real contador = 1, resultado
+            faca
+            {
+                resultado = 5 * contador
+                escreva("5 x " + contador + " = " + resultado + "\n")
+                contador = contador + 1
+            } enquanto (contador <= 10)
+ex36
+real tabuada ,contador = 1, resultado
+            escreva ("Digite um numero: ")
+            leia (tabuada)
+            enquanto (tabuada < 0)
+            {
+                escreva ("Numero invalido!")
+                escreva ("Digite outro número: ")
+                leia (tabuada)
+            } 
+            faca
+            {
+                resultado = tabuada * contador 
+                escreva (tabuada + " x " + contador + " = " + resultado + "\n")
+                contador = contador + 1
+            } enquanto (contador <= 10)
+ex37
+real tabuada, contador, resultado
+            escreva("Digite um numero: ")
+            leia (tabuada)
+            enquanto (tabuada < 0)
+            {
+                escreva("Numero invalido!\n")
+                escreva("Digite outro número: ")
+                leia (tabuada)
+            }
+            escreva("Digite um numero: ")
+            leia (contador)
+            enquanto (contador < tabuada)
+            {
+                escreva("Numero invalido!\n")
+                escreva("Digite outro número: ")
+                leia (contador)
+            }
+            faca
+            {
+                resultado = tabuada * contador
+                escreva(tabuada + " x " + contador + " = " + resultado + "\n")
+                contador = contador - 1
+            } enquanto (contador >= 1)
+ex38
+real contador = 1, resultado, tabuada = 1
+            cadeia teste
+            enquanto (tabuada <= 20)
+            {
+                contador = 1
+                faca
+                {
+                    resultado = tabuada * contador
+                    escreva(tabuada + " x " + contador + " = " + resultado + "\n")
+                    contador = contador + 1
+                }enquanto(contador <= 10)
+                leia (teste)
+                tabuada = tabuada + 1
+            }
+ex39
+real contador = 0, contador1 = 0 , resultado
+            faca
+            {
+                resultado = contador + contador1
+                escreva(contador1 + " + " + contador + " = " + resultado + "\n")
+                contador1 = contador
+                contador = contador + 1
+            } enquanto (resultado <= 100)
+ex40
+real anterior = 0, atual = 0, proximo = 1;
+            enquanto (atual <= 40)
+            {
+                escreva (anterior + " + " + atual + " = " + proximo + "\n");
+                anterior = atual;
+                atual = proximo;
+                proximo = atual + anterior;
+            }
+ex41
+real anterior = 1, anterior1 = 1, atual = 1, proximo = 1
+            enquanto (atual <= 40)
+            {
+                escreva(anterior + " + " + anterior1 + " + " + atual + " = " + proximo + "\n")
+                anterior1 = anterior
+                anterior = atual
+                atual = proximo
+                proximo = atual + anterior + anterior1
+            }
+ex42
+inteiro sequencia [51]
+            inteiro numero, impar = 3, contador = 0
+            escreva ("Digite um numero: ")
+            leia (numero)
+            enquanto (numero <= 0 ou numero >= 50)
+            {
+                escreva ("ERRO! Numero invalido.")
+                escreva("Digite um numero: ")
+                leia (numero)
+            }
+
+            para(; 50 >= contador ; contador++)
+            {
+                sequencia [contador] = contador + impar
+                escreva(sequencia [contador] + ", ")
+                impar = impar + 2
+            }
+ex43
+inteiro sequencia [51]
+            inteiro denominador= 1, numero
+            escreva ("Digite um numero: ")
+            leia (numero)
+            enquanto (numero <= 0 e numero >= 50)
+            {
+                escreva("ERRO! Numero invalido.\n")
+                escreva("Digite um numero: ")
+                leia (numero)
+            }
+
+            para (; numero <= 50; numero++)
+            {
+                denominador = numero + 1
+                sequencia[numero] = numero
+                escreva (sequencia[numero] + "\n________\n" + denominador + "\n")
+            }
+ex44
+inteiro sequencia [51]
+            inteiro numero, impar = 3, potencia = 0,potenciabase
+            escreva("Digite um numero: ")
+            leia (numero)
+            enquanto (numero <= 0 e numero >= 50)
+            {
+                escreva ("ERRO! Numero invalido.")
+                escreva ("Digite um numero: ")
+                leia (numero)
+            }
+
+            para (; numero <= 50; numero++) 
+            {
+            	 potencia = potencia + 1
+                sequencia[numero] = numero + impar
+                potenciabase = potencia * (potencia * potencia)
+                escreva (sequencia [numero] + "\n______\n " + potenciabase + "\n")
+                impar = impar + 2      
+            }
+ex45
+inteiro numero [11] 
+            inteiro contador, maior_numero = 0, soma = 0, media = 0
+            para (contador = 1; contador <= 10; contador++)
+            {
+                escreva("Digite o " + contador + " numero: ")
+                leia (numero[contador])
+                se (maior_numero <= numero[contador])
+                {
+                    maior_numero = numero[contador]
+                }
+                soma = soma + numero[contador]
+                media = soma / 10
+            }
+            escreva("O maior numero é " + maior_numero + "\n")
+            escreva("A soma dos numeros são " + soma+ "\n")
+            escreva("A média é " + media + "\n")
+ex46
+inteiro numero [21]
+            inteiro contador, maiorNumero = 0, soma = 0, media = 0, digitar, menorNumero = 0
+            real positivo = 0, negativo = 0, porcentagemPositiva, porcentagemNegativa
+            escreva ("Digite a quantidade de numeros a ser digitados: ")
+            leia (digitar)
+            enquanto (digitar >= 20 e digitar <= 0)
+            {
+                escreva ("ERRO! Numero invalido.")
+                escreva ("Digite a quantidade de numeros a ser digitados: ")
+                leia (digitar)
+            }
+            para (contador = 1; contador <= digitar; contador++)
+            {
+                escreva ("Digite o " + contador + " numero: ")
+                leia (numero[contador])
+                se (menorNumero <= numero[contador])
+                {
+                    menorNumero = numero[contador]
+                }
+                senao
+                {
+                    menorNumero = numero[contador]
+                }
+                se (numero[contador] >= 0) 
+                {
+                    positivo += 1
+                }
+                senao
+                {
+                    negativo += + 1
+                }
+                soma = soma + numero[contador]
+            }
+            media = soma / digitar
+            porcentagemPositiva = ((positivo / digitar) * 100)
+            porcentagemNegativa = ((negativo / digitar) * 100)
+            escreva("O maior numero é " + maiorNumero + "\n")
+            escreva("O menor numero é " + menorNumero + "\n")
+            escreva("A soma dos numeros são " + soma + "\n")
+            escreva("A média é " + media + "\n")
+            escreva("A porcentagem de numero positivo é " + porcentagemPositiva + "%"  + "\n")
+            escreva("A porcentagem de numero negativo é " + porcentagemNegativa + "%"  + "\n")
+ex47
+cadeia continua = "S"
+		 faca
+		 {
+		 inteiro numero [21]
+            inteiro contador, maiorNumero = 0, soma = 0, media = 0, digitar, menorNumero = 0
+            real positivo = 0, negativo = 0, porcentagemPositiva, porcentagemNegativa
+            escreva ("Digite a quantidade de numeros a ser digitados: ")
+            leia (digitar)
+            enquanto (digitar >= 20 e digitar <= 0)
+            {
+                escreva ("ERRO! Numero invalido.")
+                escreva ("Digite a quantidade de numeros a ser digitados: ")
+                leia (digitar)
+            }
+            para (contador = 1; contador <= digitar; contador++)
+            {
+                escreva ("Digite o " + contador + " numero: ")
+                leia (numero[contador])
+                se (menorNumero <= numero[contador])
+                {
+                    menorNumero = numero[contador]
+                }
+                senao
+                {
+                    menorNumero = numero[contador]
+                }
+                se (numero[contador] >= 0) 
+                {
+                    positivo ++
+                }
+                senao
+                {
+                    negativo ++
+                }
+                soma = soma + numero[contador]
+            }
+            media = soma / digitar
+            porcentagemPositiva = ((positivo / digitar) * 100)
+            porcentagemNegativa = ((negativo / digitar) * 100)
+            escreva("O maior numero é " + maiorNumero + "\n")
+            escreva("O menor numero é " + menorNumero + "\n")
+            escreva("A soma dos numeros são " + soma + "\n")
+            escreva("A média é " + media + "\n")
+            escreva("A porcentagem de numero positivo é " + porcentagemPositiva + "%"  + "\n")
+            escreva("A porcentagem de numero negativo é " + porcentagemNegativa + "%"  + "\n")
+            escreva ("Deseja continuar? (S//N): ")
+            leia (continua)
+                   
+		}enquanto nquanto (continua == "S")
